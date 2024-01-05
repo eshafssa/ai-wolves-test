@@ -8,9 +8,9 @@ module.exports = {
       height: {
         '765': '765px',
       },
-      // fontFamily: {
-      //   'Ubuntu': ['Ubuntu','Roboto', 'sans-serif'],
-      // },
+      fontFamily: {
+        'ubuntu': ['Ubuntu','Roboto', 'sans-serif'],
+      },
     }
   },
   plugins: [],

@@ -5,7 +5,8 @@ import Button from "../../components/Button";
 const TwoStepVerification = () => {
   return (
     <form
-      onSubmit={() => {
+      onSubmit={(e) => {
+        e.preventDefault();
         alert("Email verified!");
       }}
     >

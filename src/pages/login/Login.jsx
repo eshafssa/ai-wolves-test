@@ -50,7 +50,10 @@ const Login = () => {
           className="bg-gray-100 p-2 outline-none border rounded-lg hover:shadow-lg"
           placeholder="****"
         />
-        <Link to="/Login" className="font-ubuntu text-base text-violet-800">
+        <Link
+          to="/ForgotPssword"
+          className="font-ubuntu text-base text-violet-800"
+        >
           Forgot your password?
         </Link>
         <div className="flex flex-col mt-5 mb-20">

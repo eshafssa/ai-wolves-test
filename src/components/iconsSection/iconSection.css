@@ -1,0 +1,29 @@
+.icon-section {
+    margin: 0 -12%;
+}
+.icon-section div:first-child{
+    margin-top: -30%;
+}
+  
+.icon-holder {
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+     
+.icon {
+    border-radius: 15px;
+    height: 7rem;
+    width: 7rem;
+    margin: 1rem;
+    position: relative;
+    animation: slideShow 30s infinite;
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.1);
+  }
+ 
+  @keyframes slideShow {
+    from {left: 0%;}
+    to {left: -50%;}
+  }

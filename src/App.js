@@ -9,6 +9,7 @@ import {
 	Route,
 	Routes,
   } from "react-router-dom";
+import TwoStepVerification from './pages/twoStepVerification/TwoStepVerification';
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
                   <Route path="/Login" element={<Login />} />
                   <Route path="/SignUp" element={<SignUp />} />
                   <Route path="/ForgotPssword" element={<ForgotPssword />} />
+                  <Route path="/TwoStepVerification" element={<TwoStepVerification />} />
                 </Routes>
                </Layout>
             </main>

@@ -3,7 +3,7 @@ import facebookLogo from "../../assets/img/facebooklogo.png";
 import logo from "../../assets/img/logo.jpg";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const SignUp = () => {
@@ -19,6 +19,9 @@ const SignUp = () => {
   const handleChange = (name, value) => {
     setFormData({ ...formData, [name]: value });
   };
+
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = {};
@@ -45,7 +48,7 @@ const SignUp = () => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      alert("Form Submitted successfully");
+      navigate("/TwoStepVerification");
     }
   };
   return (
@@ -116,7 +119,9 @@ const SignUp = () => {
               />
             </div>
           </div>
+
           <Button text="Sign Up" />
+
           <div className="flex w-full  justify-center items-center">
             <span className="h-0.5 ml-4 w-full bg-gray-200" />
             <span className="font-ubuntu w-full mx-4">Or sign up with</span>

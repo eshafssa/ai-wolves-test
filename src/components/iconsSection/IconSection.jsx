@@ -13,7 +13,6 @@ const IconSection = () => {
             const randomNumber = Math.floor(Math.random() * 100);
             const imageNumber = (randomNumber % 10) + 1;
             const imageSrc = require(`../../assets/img/games/${imageNumber}.PNG`);
-            console.log(imageSrc);
             const img = document.createElement("img");
             img.setAttribute("class", "icon");
             img.setAttribute("src", imageSrc);

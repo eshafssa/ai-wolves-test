@@ -1,5 +1,5 @@
 // import { LockOutlined } from "@mui/icons-material";
-import logo from "../../assets/img/logo.jpg";
+import logo from "../../assets/img/logo.PNG";
 import Button from "../../components/Button";
 
 const TwoStepVerification = () => {
@@ -12,7 +12,7 @@ const TwoStepVerification = () => {
     >
       {/* <LockOutlined /> */}
       <div className="flex mx-8 flex-col items-center">
-        <img src={logo} alt="logo" className="w-16 h-16 mt-7 mb-4" />
+        <img src={logo} alt="logo" className="w-20 h-20 mt-7 mb-4" />
         <div className="font-ubuntu text-gray-800 text-lg font-bold">
           2-step verification
         </div>

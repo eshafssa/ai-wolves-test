@@ -1,5 +1,5 @@
 import "./login.css";
-import logo from "../../assets/img/logo.jpg";
+import logo from "../../assets/img/logo.PNG";
 import googLogo from "../../assets/img/google-logo.png";
 import facebookLogo from "../../assets/img/facebooklogo.png";
 import { Link } from "react-router-dom";
@@ -40,7 +40,7 @@ const Login = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex flex-col items-center">
-        <img src={logo} alt="logo" className="w-16 h-16 mt-7 mb-4" />
+        <img src={logo} alt="logo" className="w-20 h-20 mt-7 mb-4" />
         <div className="font-ubuntu text-gray-800 text-lg font-bold">
           Sign up or Login with
         </div>

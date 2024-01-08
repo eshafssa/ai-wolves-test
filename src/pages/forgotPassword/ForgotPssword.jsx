@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.jpg";
+import logo from "../../assets/img/logo.PNG";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { useState } from "react";
@@ -31,7 +31,7 @@ const ForgotPssword = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex mx-8 flex-col items-center">
-        <img src={logo} alt="logo" className="w-16 h-16 mt-7 mb-4" />
+        <img src={logo} alt="logo" className="w-20 h-20 mt-7 mb-4" />
         <div className="font-ubuntu text-gray-800 text-lg font-bold">
           Reset your password
         </div>

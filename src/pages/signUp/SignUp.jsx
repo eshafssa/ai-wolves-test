@@ -1,6 +1,6 @@
 import googLogo from "../../assets/img/google-logo.png";
 import facebookLogo from "../../assets/img/facebooklogo.png";
-import logo from "../../assets/img/logo.jpg";
+import logo from "../../assets/img/logo.PNG";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { Link, useNavigate } from "react-router-dom";
@@ -54,7 +54,7 @@ const SignUp = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex flex-col items-center mx-8">
-        <img src={logo} alt="logo" className="w-16 h-16 mt-7 mb-4" />
+        <img src={logo} alt="logo" className=" w-20 h-20 mt-7 mb-4" />
         <div className="font-ubuntu text-gray-800 text-xl font-bold">
           Sign Up
         </div>
@@ -65,8 +65,8 @@ const SignUp = () => {
           </Link>
         </div>
         <div className="w-full">
-          <div className="flex ">
-            <div className="mr-4">
+          <div className="sm:flex ">
+            <div className="sm:mr-4 flex flex-col">
               <Input
                 text="Firstname"
                 placeholder="Firstname"
@@ -76,7 +76,7 @@ const SignUp = () => {
                 onInputChange={handleChange}
               />
             </div>
-            <div>
+            <div className="flex flex-col">
               <Input
                 text="Lastname"
                 placeholder="Lastname"
@@ -87,37 +87,36 @@ const SignUp = () => {
               />
             </div>
           </div>
-          <div>
-            <div className="flex flex-col">
-              <Input
-                text="Email"
-                placeholder="host@gmail.com"
-                type="email"
-                name="email"
-                errors={errors.email}
-                onInputChange={handleChange}
-              />
-            </div>
-            <div className="flex flex-col">
-              <Input
-                text="Password"
-                placeholder="Password"
-                type="password"
-                name="password"
-                errors={errors.password}
-                onInputChange={handleChange}
-              />
-            </div>
-            <div className="flex flex-col">
-              <Input
-                text="Confirm password"
-                placeholder="Confirm password"
-                type="password"
-                name="confirmPassword"
-                errors={errors.confirmPassword}
-                onInputChange={handleChange}
-              />
-            </div>
+
+          <div className="flex flex-col">
+            <Input
+              text="Email"
+              placeholder="host@gmail.com"
+              type="email"
+              name="email"
+              errors={errors.email}
+              onInputChange={handleChange}
+            />
+          </div>
+          <div className="flex flex-col">
+            <Input
+              text="Password"
+              placeholder="Password"
+              type="password"
+              name="password"
+              errors={errors.password}
+              onInputChange={handleChange}
+            />
+          </div>
+          <div className="flex flex-col">
+            <Input
+              text="Confirm password"
+              placeholder="Confirm password"
+              type="password"
+              name="confirmPassword"
+              errors={errors.confirmPassword}
+              onInputChange={handleChange}
+            />
           </div>
 
           <Button text="Sign Up" />

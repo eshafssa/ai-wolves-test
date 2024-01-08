@@ -28,7 +28,7 @@ const IconSection = () => {
     createIcons();
   }, []);
   return (
-    <div className="Outerview flex  h-765 flex-col w-full overflow-hidden rounded-l-none rounded-3xl">
+    <div className="flex h-765 flex-col w-full overflow-hidden rounded-l-none rounded-3xl">
       <div className="icon-section"></div>
     </div>
   );
